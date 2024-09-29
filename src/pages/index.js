@@ -19,7 +19,9 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <>
-      <Layout>テスト</Layout>
+      <Layout>
+        <a href="">テスト</a>
+      </Layout>
     </>
   );
 }
