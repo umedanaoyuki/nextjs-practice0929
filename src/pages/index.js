@@ -27,18 +27,68 @@ export default function Home() {
           </p>
         </section>
 
-        <section>
+        <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
           <h2>エンジニアのブログ</h2>
-          <div>
+          <div className={styles.grid}>
             <article>
               <Link href="/">
-                <img src="/images/thumbnail01.jpg" alt=""></img>
+                <img
+                  src="/images/thumbnail01.jpg"
+                  className={styles.thumbnailImage}
+                ></img>
               </Link>
               <Link href="/" legacyBehavior>
-                <a>SSGとSSRの使い分けの場面はいつなのか？</a>
+                <a className={utilStyle.boldText}>
+                  SSGとSSRの使い分けの場面はいつなのか？
+                </a>
               </Link>
               <br />
-              <small>February 23, 2020</small>
+              <small className={utilStyle.lightText}>February 23, 2020</small>
+            </article>
+            <article>
+              <Link href="/">
+                <img
+                  src="/images/thumbnail01.jpg"
+                  className={styles.thumbnailImage}
+                ></img>
+              </Link>
+              <Link href="/" legacyBehavior>
+                <a className={utilStyle.boldText}>
+                  SSGとSSRの使い分けの場面はいつなのか？
+                </a>
+              </Link>
+              <br />
+              <small className={utilStyle.lightText}>February 23, 2020</small>
+            </article>
+            <article>
+              <Link href="/">
+                <img
+                  src="/images/thumbnail01.jpg"
+                  className={styles.thumbnailImage}
+                ></img>
+              </Link>
+              <Link href="/" legacyBehavior>
+                <a className={utilStyle.boldText}>
+                  SSGとSSRの使い分けの場面はいつなのか？
+                </a>
+              </Link>
+              <br />
+              <small className={utilStyle.lightText}>February 23, 2020</small>
+            </article>
+            <article>
+              <Link href="/">
+                <img
+                  src="/images/thumbnail01.jpg"
+                  className={styles.thumbnailImage}
+                ></img>
+              </Link>
+              <Link href="/" legacyBehavior>
+                <a className={utilStyle.boldText}>
+                  SSGとSSRの使い分けの場面はいつなのか？
+                </a>
+              </Link>
+              <br />
+              <small className={utilStyle.lightText}>February 23, 2020</small>
             </article>
           </div>
         </section>
