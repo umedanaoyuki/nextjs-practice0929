@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import utilStyle from "../styles/utils.module.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +21,27 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <a href="">テスト</a>
+        <section className={utilStyle.headingMd}>
+          <p>
+            私はフルスタックエンジニアです/Udemy講師として活動しています/好きな言語はJavascriptです
+          </p>
+        </section>
+
+        <section>
+          <h2>エンジニアのブログ</h2>
+          <div>
+            <article>
+              <Link href="/">
+                <img src="/images/thumbnail01.jpg" alt=""></img>
+              </Link>
+              <Link href="/" legacyBehavior>
+                <a>SSGとSSRの使い分けの場面はいつなのか？</a>
+              </Link>
+              <br />
+              <small>February 23, 2020</small>
+            </article>
+          </div>
+        </section>
       </Layout>
     </>
   );
